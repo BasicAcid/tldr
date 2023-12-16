@@ -46,8 +46,9 @@ exceptions can always be considered, via open community discussion.)
   This means they will be able to
   push commits to all of the organization's repositories,
   merge PRs, label and close issues, among other things.
-  _Note_: All members of the tldr-pages organization
-  must make their membership public.
+  > [!NOTE]
+  > All members of the tldr-pages organization
+  > must make their membership public.
 
 - **Organization members who remain active for a while should become organization owners.**
   Specifically: members of the tldr-pages organization
@@ -78,8 +79,9 @@ exceptions can always be considered, via open community discussion.)
 
 ## How to change roles
 
-*Note: This section is aimed at owners in the tldr-pages organization
-(i.e. the group of people who are able to perform these changes).*
+> [!NOTE]
+> This section is aimed at owners in the tldr-pages organization
+> (i.e. the group of people who are able to perform these changes).
 
 If you notice a contributor being particularly active,
 review their recent contributions to check whether a role transition is due,
@@ -126,10 +128,10 @@ using one of the template messages below as a base.
    According to our [community roles documentation](https://github.com/tldr-pages/tldr/blob/main/COMMUNITY-ROLES.md), you've now met the thresholds to be effectively considered an active maintainer of the project.
    To publicly acknowledge that fact, we'd like to add you to the tldr-pages organization.
 
-   If you accept the invitation, we ask you to make your membership public, and (in case you don't already) start hanging out in our Gitter chat room.
+   If you accept the invitation, we ask you to make your membership public, and (in case you don't already) start hanging out in our [Matrix chat room](https://matrix.to/#/#tldr-pages:matrix.org).
    Additionally, consider subscribing to the notifications from the various repositories under the [tldr-pages organization](https://github.com/tldr-pages).
    As one of the public faces of the tldr-pages project, it's also especially important that you follow and encourage the [project
-   governance principles](https://github.com/tldr-pages/tldr/blob/main/COMMUNITY-ROLES.md).
+   governance principles](https://github.com/tldr-pages/tldr/blob/main/GOVERNANCE.md).
 
    How does that sound? Are you up for it?
    ```
@@ -201,3 +203,17 @@ Any member of the community can (and is encouraged to) propose role changes
 by following the process outlined [above](#how-to-change-roles).
 [Owners of the tldr-pages organization](MAINTAINERS.md#organization-owners)
 can then perform the actual role changes.
+
+## CODEOWNERS
+
+The [`.github/CODEOWNERS` file](https://github.com/tldr-pages/tldr/blob/main/.github/CODEOWNERS) allows contributors with write access to the [tldr-pages/tldr repository](https://github.com/tldr-pages/tldr) to get automatic review request notifications for given files and directories.
+If they wish to, contributors can open a pull request to add themselves to this file as desired.
+
+Example uses include (but are not limited to):
+
+- Contributors who speak a specific language and want to assist with reviewing translations in those specific languages.
+- Contributors with specific expertise who wish to review pull requests for specific platforms.
+- Contributors interested in reviewing [client specification](https://github.com/tldr-pages/tldr/blob/main/CLIENT-SPECIFICATION.md) updates.
+
+> [!NOTE]
+> This mechanism is purely for automatic review requests for PRs and doesn't grant collaborators additional copyright over the code-owned files. View the [LICENSE](https://github.com/tldr-pages/tldr/blob/main/LICENSE.md) file for more information.

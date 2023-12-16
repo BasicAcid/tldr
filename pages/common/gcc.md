@@ -3,7 +3,7 @@
 > Preprocess and compile C and C++ source files, then assemble and link them together.
 > More information: <https://gcc.gnu.org>.
 
-- Compile multiple source files into executable:
+- Compile multiple source files into an executable:
 
 `gcc {{path/to/source1.c path/to/source2.c ...}} -o {{path/to/output_executable}}`
 
@@ -22,3 +22,7 @@
 - Compile source code into an object file without linking:
 
 `gcc -c {{path/to/source.c}}`
+
+- Optimize the compiled program for performance:
+
+`gcc {{path/to/source.c}} -O{{1|2|3|fast}} -o {{path/to/output_executable}}`

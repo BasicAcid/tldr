@@ -2,7 +2,7 @@
 
 > Execute a command-line process on a remote machine.
 > This is an advanced command and it might potentially be dangerous.
-> More information: <https://learn.microsoft.com/en-us/sysinternals/downloads/psexec>.
+> More information: <https://learn.microsoft.com/sysinternals/downloads/psexec>.
 
 - Execute a command using `cmd` in a remote shell:
 
@@ -14,7 +14,7 @@
 
 - Execute a command remotely and output the result to a file:
 
-`psexec \\{{remote_host}} cmd /c {{command}} -an ^>{{path/to/file.txt}}`
+`psexec \\{{remote_host}} cmd /c {{command}} -an ^>{{path\to\file.txt}}`
 
 - Execute a program to interact with users:
 

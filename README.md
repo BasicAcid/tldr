@@ -2,21 +2,21 @@
   <h1><a href="https://tldr.sh/"><img alt="tldr-pages" src="images/banner.png" width=600/></a></h1>
 
 [![Build status][github-actions-image]][github-actions-url]
-[![Gitter chat][gitter-image]][gitter-url]
+[![Matrix chat][matrix-image]][matrix-url]
 [![Merged PRs][prs-merged-image]][prs-merged-url]
 [![GitHub contributors][contributors-image]][contributors-url]
 [![license][license-image]][license-url]
 
 [github-actions-url]: https://github.com/tldr-pages/tldr/actions
-[github-actions-image]: https://img.shields.io/github/workflow/status/tldr-pages/tldr/CI.svg
-[gitter-url]: https://gitter.im/tldr-pages/tldr
-[gitter-image]: https://img.shields.io/badge/chat-on_gitter-deeppink
+[github-actions-image]: https://img.shields.io/github/actions/workflow/status/tldr-pages/tldr/ci.yml?branch=main&label=Build
+[matrix-url]: https://matrix.to/#/#tldr-pages:matrix.org
+[matrix-image]: https://img.shields.io/matrix/tldr-pages:matrix.org?label=Chat+on+Matrix
 [prs-merged-url]: https://github.com/tldr-pages/tldr/pulls?q=is:pr+is:merged
-[prs-merged-image]: https://img.shields.io/github/issues-pr-closed-raw/tldr-pages/tldr.svg?label=merged+PRs&color=green
+[prs-merged-image]: https://img.shields.io/github/issues-pr-closed-raw/tldr-pages/tldr.svg?label=Merged+PRs&color=green
 [contributors-url]: https://github.com/tldr-pages/tldr/graphs/contributors
-[contributors-image]: https://img.shields.io/github/contributors-anon/tldr-pages/tldr.svg
+[contributors-image]: https://img.shields.io/github/contributors-anon/tldr-pages/tldr.svg?label=Contributors
 [license-url]: https://github.com/tldr-pages/tldr/blob/main/LICENSE.md
-[license-image]: https://img.shields.io/badge/license-CC_BY_4.0-blue.svg
+[license-image]: https://img.shields.io/badge/license-CC_BY_4.0-blue.svg?label=License
 </div>
 
 ## What is tldr-pages?
@@ -27,19 +27,23 @@ to traditional [man pages](https://en.wikipedia.org/wiki/Man_page).
 
 Maybe you're new to the command-line world? Perhaps you're just a little rusty or can't always recall the arguments for commands like `lsof`, or `tar`?
 
-It certainly doesn't help that the first option explained in `man tar` is:
+It certainly doesn't help that, in the past, the first option explained in `man tar` was:
 
-```
+```console
+$ man tar
+...
 -b blocksize
    Specify the block size, in 512-byte records, for tape drive I/O.
    As a rule, this argument is only needed when reading from or writing to tape drives,
    and usually not even then as the default block size of 20 records (10240 bytes) is very common.
+...
 ```
 
 There seems to be room for simpler help pages, focused on practical examples.
 How about:
 
-![Animated SVG of the tldr client displaying the tar command.](images/tldr.svg)
+![Screenshot of the tldr client displaying the tar command in light mode.](images/tldr-light.png#gh-light-mode-only)
+![Screenshot of the tldr client displaying the tar command in dark mode.](images/tldr-dark.png#gh-dark-mode-only)
 
 This repository is just that: an ever-growing collection of examples
 for the most common UNIX, Linux, macOS, SunOS, Android and Windows command-line tools.
@@ -54,10 +58,16 @@ which is supported by the tldr-pages project maintainers:
 npm install -g tldr
 ```
 
-Alternatively, you can also use the [Python client](https://github.com/tldr-pages/tldr-python-client) which can be installed via `pip3`.
+Alternatively, you can also use the official [Python client](https://github.com/tldr-pages/tldr-python-client), which can be installed via [pip3](https://pypi.org/project/tldr/).
 
-```sh
+```shell
 pip3 install tldr
+```
+
+Or Linux and Mac users can also install the official [Rust Client](https://github.com/tldr-pages/tlrc) using [Homebrew](https://formulae.brew.sh/formula/tlrc):
+
+```shell
+brew install tlrc
 ```
 
 Then you have direct access to simplified, easy-to-read help for commands, such as `tar`,
@@ -67,7 +77,7 @@ If you want an offline version without installing any software,
 check out the [PDF version](https://tldr.sh/assets/tldr-book.pdf).
 
 For browsing without installing a client to your computer,
-see the web client at <https://tldr.ostera.io>.
+see the web client at <https://tldr.inbrowser.app> (with offline support using PWA).
 
 There are also **various other clients** provided by the community,
 both for the command-line and for other platforms.
@@ -95,6 +105,9 @@ If you'd like to contribute to translations, you can visit <https://lukwebsforge
 to see the overall progress of all translations, and which translations are missing or outdated.
 
 ## Similar projects
+
+- [Command Line Interface Pages](https://github.com/command-line-interface-pages)
+  allows you to write standardized help pages for CLI, directories and configs.
 
 - [Cheat](https://github.com/cheat/cheat)
   allows you to create and view interactive cheatsheets on the command-line.
